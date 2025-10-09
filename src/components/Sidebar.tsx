@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import { GraduationCap, LayoutDashboard } from "lucide-react";
+import { GraduationCap, LayoutDashboard, UserCheck } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const Sidebar = () => {
@@ -7,6 +7,7 @@ const Sidebar = () => {
   
   const navItems = [
     { path: "/", label: "Dashboard", icon: LayoutDashboard },
+    { path: "/teachers", label: "Teachers & Staff", icon: UserCheck },
     { path: "/class/std-1", label: "Standard 1", icon: GraduationCap },
     { path: "/class/std-2", label: "Standard 2", icon: GraduationCap },
     { path: "/class/std-3", label: "Standard 3", icon: GraduationCap },

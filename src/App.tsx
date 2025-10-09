@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./pages/Layout";
 import Index from "./pages/Index";
 import ClassDetail from "./pages/ClassDetail";
+import Teachers from "./pages/Teachers";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -19,6 +20,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Index />} />
+            <Route path="teachers" element={<Teachers />} />
             <Route path="class/:classId" element={<ClassDetail />} />
           </Route>
           <Route path="*" element={<NotFound />} />
